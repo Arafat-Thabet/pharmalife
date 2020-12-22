@@ -1,0 +1,9 @@
+{
+    "name": "store/bagisto",
+    "type": "project",
+    "authors": [{
+        "name": "Arafat Thabet && Hamza Mughales",
+        "email": "arafat.733011506@gmail.com && hamzawemughales@gmail.com"
+    }],
+    "require": {}
+}
