@@ -7,7 +7,7 @@
         <div id="account">
 
             <div class="welcome-content pull-right" @click="togglePopup">
-                <i class="material-icons align-vertical-top">perm_identity</i>
+                <i class="fa fa-shopping-cart align-vertical-top"></i>
                 <span class="text-center">
                     @guest('customer')
                         {{ __('velocity::app.header.welcome-message', ['customer_name' => trans('velocity::app.header.guest')]) }}!
@@ -89,7 +89,7 @@
                             @php
                                 $showCompare = core()->getConfigData('general.content.shop.compare_option') == "1" ? true : false
                             @endphp
-                            
+
                             @if ($showCompare)
                                 <li>
                                     <a href="{{ route('velocity.customer.product.compare') }}" class="unset">{{ __('velocity::app.customer.compare.text') }}</a>

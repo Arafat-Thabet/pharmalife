@@ -6,7 +6,7 @@
                     <div v-if="hamburger" class="nav-container scrollable">
                         <div class="wrapper" v-if="this.rootCategories">
                             <div class="greeting drawer-section fw6">
-                                <i class="material-icons">perm_identity</i>
+                                <i class="perm_identity"></i>
                                 <span>
                                     @guest('customer')
                                         <a class="unset" href="{{ route('customer.session.index') }}">
@@ -22,7 +22,7 @@
 
                                     <i
                                         @click="closeDrawer()"
-                                        class="material-icons pull-right text-dark">
+                                        class="fa fa-shopping-cart pull-right text-dark">
                                         cancel
                                     </i>
                                 </span>
@@ -189,7 +189,7 @@
 
                                 <h4 class="display-inbl">@{{ subCategory.name }}</h4>
 
-                                <i class="material-icons pull-right text-dark" @click="closeDrawer()">
+                                <i class="fa fa-shopping-cart pull-right text-dark" @click="closeDrawer()">
                                     cancel
                                 </i>
                             </div>
@@ -242,7 +242,7 @@
                             <div class="drawer-section">
                                 <i class="rango-arrow-left fs24 text-down-4" @click="toggleMetaInfo('languages')"></i>
                                 <h4 class="display-inbl">{{ __('velocity::app.responsive.header.languages') }}</h4>
-                                <i class="material-icons pull-right text-dark" @click="closeDrawer()">cancel</i>
+                                <i class="fa fa-shopping-cart pull-right text-dark" @click="closeDrawer()">cancel</i>
                             </div>
 
                             <ul type="none">
@@ -284,7 +284,7 @@
                             <div class="drawer-section">
                                 <i class="rango-arrow-left fs24 text-down-4" @click="toggleMetaInfo('currencies')"></i>
                                 <h4 class="display-inbl">{{ __('velocity::app.shop.general.currencies') }}</h4>
-                                <i class="material-icons pull-right text-dark" @click="closeDrawer()">cancel</i>
+                                <i class="fa fa-shopping-cart pull-right text-dark" @click="closeDrawer()">cancel</i>
                             </div>
 
                             <ul type="none">
@@ -336,20 +336,20 @@
                             <div class="badge-container" v-if="compareCount > 0">
                                 <span class="badge" v-text="compareCount"></span>
                             </div>
-                            <i class="material-icons">compare_arrows</i>
+                            <i class="fa fa-shopping-cart">compare_arrows</i>
                         </a>
                     @endif
 
 
                     <a class="unset cursor-pointer" @click="openSearchBar">
-                        <i class="material-icons">search</i>
+                        <i class="fa fa-shopping-cart">search</i>
                     </a>
 
                     <a href="{{ route('shop.checkout.cart.index') }}" class="unset">
                         <div class="badge-wrapper">
                             <span class="badge">@{{ cartItemsCount }}</span>
                         </div>
-                        <i class="material-icons text-down-3">shopping_cart</i>
+                        <i class="fa fa-shopping-cart text-down-3"></i>
                     </a>
                 </div>
 

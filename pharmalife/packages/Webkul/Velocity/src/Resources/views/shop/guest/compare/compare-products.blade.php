@@ -3,7 +3,7 @@
     $comparableAttributes = $attributeRepository->getComparableAttributesBelongsToFamily();
 
     $locale = request()->get('locale') ?: app()->getLocale();
-    
+
     $attributeOptionTranslations = DB::table('attribute_option_translations')->where('locale', $locale)->get()->toJson();
 @endphp
 
@@ -86,7 +86,7 @@
                                             <vnode-injector :nodes="getDynamicHTML(product.addToCartHtml)"></vnode-injector>
 
                                             <i
-                                                class="material-icons cross fs16"
+                                                class="fa fa-shopping-cart cross fs16"
                                                 @click="removeProductCompare(product.id)">
 
                                                 close

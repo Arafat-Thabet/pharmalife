@@ -218,7 +218,7 @@
 
                                                     <div class="col-4 cursor-pointer text-down-4">
                                                         <a href="{{ route('shop.checkout.cart.remove', ['id' => $item->id]) }}" class="unset">
-                                                            <i class="material-icons fs24">delete</i>
+                                                            <i class="fa fa-shopping-cart fs24">delete</i>
                                                         </a>
                                                     </div>
                                                 </div>

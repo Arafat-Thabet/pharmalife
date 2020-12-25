@@ -59,7 +59,7 @@
                                 @click="validateFormAfterAction"
                                 class="card-body add-address-button">
                                 <div class="cursor-pointer" @click="newBillingAddress()">
-                                    <i class="material-icons">
+                                    <i class="fa fa-shopping-cart">
                                         add_circle_outline
                                     </i>
                                     <span>{{ __('shop::app.checkout.onepage.new-address') }}</span>
@@ -189,7 +189,7 @@
                                 @click="validateFormAfterAction"
                                 class="card-body add-address-button">
                                 <div class="cursor-pointer" @click="newShippingAddress()">
-                                    <i class="material-icons">
+                                    <i class="fa fa-shopping-cart">
                                         add_circle_outline
                                     </i>
                                     <span>{{ __('shop::app.checkout.onepage.new-address') }}</span>

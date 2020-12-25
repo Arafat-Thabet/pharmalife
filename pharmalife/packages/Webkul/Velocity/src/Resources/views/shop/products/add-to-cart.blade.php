@@ -31,7 +31,7 @@
                     class="theme-btn {{ $addToCartBtnClass ?? '' }}">
 
                     @if (! (isset($showCartIcon) && !$showCartIcon))
-                        <i class=" shopping-cart">shopping_cart</i>
+                        <i class=" fa fa-shopping-cart"></i>
                     @endif
 
                     {{ ($product->type == 'booking') ?  __('shop::app.products.book-now') :  __('shop::app.products.add-to-cart') }}
@@ -51,7 +51,7 @@
                         class="btn btn-add-to-cart {{ $addToCartBtnClass ?? '' }}">
 
                         @if (! (isset($showCartIcon) && !$showCartIcon))
-                            <i class=" shopping-cart">888888888</i>
+                            <i class=" fa fa-shopping-cart"></i>
                         @endif
 
                         <span class="fs14 fw6 text-uppercase text-up-4">
