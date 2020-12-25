@@ -2,13 +2,13 @@
 # /storage/dcc-data/
 # /node_modules
 # /public/hot
-# /public/storage
+/public/storage
 # /public/css
 # /public/js
 # /public/vendor
 # /public/themes
 # /public/fonts
-# /vendor
+/vendor
 # /data
 # /.idea
 # /.vscode
@@ -17,12 +17,12 @@
 # Homestead.yaml
 # npm-debug.log
 # yarn-error.log
-# .env
+.env
 # /ignorables/*
 # yarn.lock
 # package-lock.json
 # yarn.lock
 # .php_cs.cache
-# storage/*.key
+storage/*.key
 # /resources/themes/velocity/*
 # /resources/lang/vendor/webkul/admin/*
